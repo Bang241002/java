@@ -9,7 +9,7 @@ public class music {
         Scanner sc = new Scanner(System.in);
         try (
                 Connection conn = DriverManager.getConnection(
-                        "jdbc:mysql://localhost:3306/ebookshop",
+                        "jdbc:mysql://localhost:3306/music",
                         "root", "xxxx");
 
                 Statement stmt = conn.createStatement();
