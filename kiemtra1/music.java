@@ -22,7 +22,7 @@ public class music {
                 System.out.println(resultSet.getInt("id") + ", "
                         + resultSet.getInt("name") + ", "
                         + resultSet.getString("author") + ", "
-                        + resultSet.getInt("year")
+                        + resultSet.getString("year")
                 );
             }
             {
@@ -38,7 +38,7 @@ public class music {
                     System.out.println(resultSet2.getInt("id") + ","
                             + resultSet2.getInt("name") + ","
                             + resultSet2.getString("author") + ","
-                            + resultSet2.getInt("year")
+                            + resultSet2.getString("year")
                     );
                 }
 
