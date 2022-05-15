@@ -15,7 +15,7 @@ public class music {
                 Statement stmt = conn.createStatement();
         ) {
             // Issue a SELECT to check the changes
-            String strSelect = "select * from music";
+            String strSelect = "SELECT * FROM `music`";
             System.out.println("The SQL statement is: " + strSelect + "\n");
             ResultSet resultSet = stmt.executeQuery(strSelect);
             while (resultSet.next()) {
