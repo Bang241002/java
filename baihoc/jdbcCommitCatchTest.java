@@ -3,7 +3,7 @@ package java.baihoc;
 import java.sql.*;
 
 public class jdbcCommitCatchTest {
-    public static void main(String[]args){
+    public static void main(String[]args) throws SQLException{
         try(
                 Connection conn = DriverManager.getConnection(
                         "jdbc:mysql://localhost:3306/ebookshop",

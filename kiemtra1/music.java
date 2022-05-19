@@ -9,20 +9,20 @@ public class music {
         Scanner sc = new Scanner(System.in);
         try (
                 Connection conn = DriverManager.getConnection(
-                        "jdbc:mysql://localhost:3306/ebookshop",
+                        "jdbc:mysql://localhost:3306/music",
                         "root", "xxxx");
 
                 Statement stmt = conn.createStatement();
         ) {
             // Issue a SELECT to check the changes
-            String strSelect = "select * from music";
+            String strSelect = "SELECT * FROM `music`";
             System.out.println("The SQL statement is: " + strSelect + "\n");
             ResultSet resultSet = stmt.executeQuery(strSelect);
             while (resultSet.next()) {
                 System.out.println(resultSet.getInt("id") + ", "
                         + resultSet.getInt("name") + ", "
                         + resultSet.getString("author") + ", "
-                        + resultSet.getInt("year")
+                        + resultSet.getString("year")
                 );
             }
             {
@@ -38,7 +38,7 @@ public class music {
                     System.out.println(resultSet2.getInt("id") + ","
                             + resultSet2.getInt("name") + ","
                             + resultSet2.getString("author") + ","
-                            + resultSet2.getInt("year")
+                            + resultSet2.getString("year")
                     );
                 }
 
