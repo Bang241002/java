@@ -121,7 +121,7 @@ public class ProductDao {
      */
     public boolean delete(int Id){
         try {
-            PreparedStatement preparedStatement = CONNECTION.prepareStatement("DELETE FROM product WHERE productId=?");
+            PreparedStatement preparedStatement = CONNECTION.prepareStatement("DELETE FROM Id WHERE productId=?");
             preparedStatement.setInt(1, Id);
             preparedStatement.execute();
             return true;
